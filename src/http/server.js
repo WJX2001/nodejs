@@ -15,6 +15,7 @@ const router = [
     {
         path: '/weather',
         handler: (res,query) => {
+            // TODO: 网络请求，数据库查询
             console.log(query)
             res.end(JSON.stringify(query))
         }
